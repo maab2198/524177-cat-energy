@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Yx](https://up.htmlacademy.ru/adaptive/13/user/524177).
-* Наставник: `Неизвестно`.
+* Студент: [Мария Абрамова](https://up.htmlacademy.ru/adaptive/13/user/524177).
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
