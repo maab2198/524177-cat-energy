@@ -1,3 +1,4 @@
+  /*---CSSCOMB не запускать---*/
 .link() {
   text-decoration: none;
 }
@@ -15,6 +16,7 @@
   text-transform: uppercase;
   font-family: @font-family-medium;
   font-weight: 400;
+  color: @black;
 }
 
 .lower-text () {
@@ -29,15 +31,21 @@
   font-weight: 400;
 }
 
-.content-none() {
-  content: "";
+.rare-title() {
+  .upper-reg-text();
+  .heading();
+  font-size: @font-size-h3;
+  color: @black;
+  line-height: 16px;
+
 }
 
-.content() {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.middle-title() {
+  .lower-text();
+  .heading();
+  font-size: @font-size-h2;
+  color: @black;
+  line-height: 24px;
 }
 
 .big-title() {
@@ -49,10 +57,35 @@
   padding-bottom:28px;
 }
 
-.disc() {
+.p-text () {
+  .heading();
+  font-size: @font-size-small;
+  color: @text-grey;
+  font-family: @font-family-arial;
+}
+
+.desc-black() {
+  .heading();
+  font-size: @font-size-btn;
+  color: @text-grey;
+  font-family: @font-family-arial;
+}
+
+.desc() {
   .heading();
   color: @text-grey;
   line-height: 18px;
   font-size: @font-size-btn;
   font-family: @font-family-arial;
+}
+
+.content-none() {
+  content: "";
+}
+
+.content() {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 }

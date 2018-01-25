@@ -1,9 +1,12 @@
+.example {
+  background-color: @grey;
+}
 .example__title {
   .big-title();
 }
 
-.example__disc {
-  .disc();
+.example__desc {
+  .desc();
 }
 
 .example__stats {
@@ -39,11 +42,8 @@
 
   width: 85px;
   padding: 0 15px;
-
-  font-size: @font-size-small;
-  font-family: @font-family-arial;
+  .p-text();
   text-align: center;
-  color: @text-grey;
   text-transform: lowercase;
 
   background-color: @grey;
