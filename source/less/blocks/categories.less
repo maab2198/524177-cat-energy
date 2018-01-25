@@ -19,14 +19,14 @@
   background: @grey;
   position: relative;
   &::before {
-    .content-none();
+    .content();
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: @green;
   }
   &--slim::after {
-    .content-none();
+    .content();
     width: 40px;
     height: 40px;
     left: 5px;
@@ -34,7 +34,7 @@
     background-position: 50%;
   }
   &--pro::after {
-    .content-none();
+    .content();
     width: 40px;
     height: 40px;
     background: url("../../img/icon-cat-pro.svg") no-repeat;
