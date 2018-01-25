@@ -1,12 +1,15 @@
 .categories {
-  background: @white;
   padding: 20px;
+
+  background: @white;
 }
 
 .categories__title {
   margin: 0;
-  padding-left: 50px;
+  padding: 17px 0 37px 70px;
+
   font-size: @font-size-h2;
+
   .upper-reg-text();
 }
 
@@ -15,48 +18,67 @@
 }
 
 .categories__item {
-  .list();
-  background: @grey;
   position: relative;
 
+  padding: 22px 20px;
+
+  background: @grey;
+
+  .list();
+
   &::before {
-    .content();
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    top: 22px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+
     background: @green;
+    border-radius: 50%;
+
+    .content();
   }
 
   &--slim::after {
-    .content();
-    width: 40px;
-    height: 40px;
-    left: 5px;
-    background: url("../../img/icon-cat-slim.svg") no-repeat;
+    top: 22px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    background: url('../../img/icon-cat-slim.svg') no-repeat;
     background-position: 50%;
+
+    .content();
   }
 
   &--pro::after {
-    .content();
-    width: 40px;
-    height: 40px;
-    background: url("../../img/icon-cat-pro.svg") no-repeat;
+    top: 22px;
+    left: 10px;
+
+    width: 70px;
+    height: 50px;
+
+    background: url('../../img/icon-cat-pro.svg') no-repeat;
     background-position: 50%;
+
+    .content();
   }
 }
 
 .categories__desc {
   font-size: @font-size-btn;
-  font-family: @font-family-arial;
   line-height: 18px;
+  font-family: @font-family-arial;
   color: @text-grey;
 }
 
 .categories__link {
+  font-size: 16px;
+  color: @black;
+
   .link();
   .upper-reg-text();
-  color: @black;
-  font-size: 16px;
 }
 
 .categories__control {

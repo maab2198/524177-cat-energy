@@ -1,28 +1,28 @@
 .navigation {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-}
-
-.navigation__list {
-  .content-none();
 }
 
 .navigation__toggle {
   position: absolute;
   top: -30px;
   right: 0;
+
   display: block;
   width: 20px;
   height: 14px;
   padding: 0;
-  border: none;
+
   font-size: 0;
+
+  background: url('../../img/icon-close.svg') no-repeat;
+  border: none;
   cursor: pointer;
-  background: url("../../img/icon-close.svg") no-repeat;
 
   &--close {
-    background: url("../../img/icon-close.svg") no-repeat;
+    background: url('../../img/icon-close.svg') no-repeat;
   }
 }

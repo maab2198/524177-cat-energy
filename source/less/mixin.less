@@ -1,7 +1,7 @@
 .link() {
   text-decoration: none;
 }
-.heading () {
+.heading() {
   margin: 0;
 }
 
@@ -23,6 +23,7 @@
 }
 
 .upper-reg-text () {
+  margin: 0;
   text-transform: uppercase;
   font-family: @font-family-regular;
   font-weight: 400;
@@ -37,4 +38,21 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.big-title() {
+  .lower-text();
+  .heading();
+  line-height: 60px;
+  color: @black;
+  font-size: @font-size-big;
+  padding-bottom:28px;
+}
+
+.disc() {
+  .heading();
+  color: @text-grey;
+  line-height: 18px;
+  font-size: @font-size-btn;
+  font-family: @font-family-arial;
 }
