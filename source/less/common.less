@@ -1,10 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: @black;
   /*-----EXTRA----*/
-  background-color: @grey;
-  width: @body-width;
   margin: 0 auto;
-  border: 1px solid @green;
+  border:1px solid @dark-grey;
+  width: @body-width;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
