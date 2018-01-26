@@ -3,11 +3,10 @@
 }
 
 .site-list__item {
-  color: @black;
-
-  background-color: @white;
-
   .list();
+
+  color: @black;
+  background-color: @white;
 
   &--current {
     background-color: @white;
@@ -15,13 +14,15 @@
 }
 
 .site-list__link {
-  display: block;
+  .upper-text();
+  .link();
 
   font-size: @font-size-site-list;
   line-height: 20px;
-  text-align: center;
-  color: @black;
 
-  .upper-text();
-  .link();
+  display: block;
+
+  text-align: center;
+
+  color: @black;
 }

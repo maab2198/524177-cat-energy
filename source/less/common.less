@@ -9,11 +9,12 @@ html {
 }
 
 body {
-  color: @black;
+  width: @body-width;
   /*-----EXTRA----*/
   margin: 0 auto;
-  border:1px solid @dark-grey;
-  width: @body-width;
+
+  color: @black;
+  border: 1px solid @dark-grey;
 }
 
 img {
@@ -26,10 +27,13 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
+
   overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  border: 0;
 }

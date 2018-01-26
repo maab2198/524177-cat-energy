@@ -5,12 +5,12 @@
 }
 
 .categories__title {
-  margin: 0;
-  padding: 17px 0 37px 70px;
+  .upper-reg-text();
 
   font-size: @font-size-h2;
 
-  .upper-reg-text();
+  margin: 0;
+  padding: 17px 0 37px 70px;
 }
 
 .categories__list {
@@ -18,31 +18,33 @@
 }
 
 .categories__item {
+  .list();
+
   position: relative;
 
   padding: 22px 20px;
 
   background: @grey;
 
-  .list();
-
   &::before {
+    .content();
+
     top: 22px;
     left: 20px;
 
     width: 50px;
     height: 50px;
 
-    background: @green;
     border-radius: 50%;
-
-    .content();
+    background: @green;
   }
 
   &--slim {
     .content-none();
 
     &::after {
+      .content();
+
       top: 22px;
       left: 20px;
 
@@ -51,8 +53,6 @@
 
       background: url("../img/icon-cat-slim.svg") no-repeat;
       background-position: 50%;
-
-      .content();
     }
   }
 
@@ -60,6 +60,8 @@
     .content-none();
 
     &::after {
+      .content();
+
       top: 22px;
       left: 10px;
 
@@ -68,22 +70,21 @@
 
       background: url("../img/icon-cat-pro.svg") no-repeat;
       background-position: 50%;
-
-      .content();
     }
   }
 }
 
 .categories__desc {
-  .desc()
+  .desc();
 }
 
 .categories__link {
-  font-size: @font-size-16;
-  color: @black;
-
   .link();
   .upper-reg-text();
+
+  font-size: @font-size-16;
+
+  color: @black;
 }
 
 .categories__control {

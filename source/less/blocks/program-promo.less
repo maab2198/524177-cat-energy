@@ -1,28 +1,32 @@
 .program-promo {
   background-color: @white;
   background-image: url("../img/index-can-mobile@1x.png"),
-    url("../img/index-background-mobile@1x.jpg");
+  url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 20px  168px, 0 0;
 }
 
 .program-promo__title {
+  .lower-text();
+
+  font-size: @font-size-big;
+
   margin: 0;
   padding-top: 29px;
 
-  font-size: @font-size-big;
   text-align: center;
-  color: @white;
 
-  .lower-text();
+  color: @white;
 }
 
 .program-promo__slogan {
-  font-size: @font-size-btn;
-  text-align: center;
-  color: @white;
-
   .upper-reg-text();
+
+  font-size: @font-size-btn;
+
+  text-align: center;
+
+  color: @white;
 }
 
 .program-promo__btn {

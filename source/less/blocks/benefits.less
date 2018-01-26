@@ -16,19 +16,20 @@
   position: relative;
 
   display: block;
+
   min-height: 60px;
   padding-bottom: 20px;
   padding-left: 80px;
 
   &::before {
+    .content();
+
     width: 60px;
     height: 60px;
 
     background-color: @green;
     background-repeat: no-repeat;
     background-position: center;
-
-    .content();
   }
 
   &--leaf {
