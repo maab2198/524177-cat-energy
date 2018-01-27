@@ -2,6 +2,10 @@
   background-color: @grey;
 }
 
+.example__wrapper {
+  .mobile-wrapper();
+}
+
 .example__title {
   .big-title();
 }
@@ -26,17 +30,14 @@
 }
 
 .example__stats-title {
-  .upper-reg-text();
+  .middle-upper-title();
 
-  font-size: @font-size-h2;
   line-height: 55px;
 
   display: block;
 
   text-align: center;
   vertical-align: middle;
-
-  color: @black;
 }
 
 .example__stats-caption {
@@ -76,9 +77,5 @@
 }
 
 .example__img-caption {
-  .upper-reg-text();
-
-  font-size: @font-size-16;
-
-  color: @black;
+  .rare-title();
 }

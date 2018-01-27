@@ -1,11 +1,11 @@
 .site-list {
-  .list();
+  min-height: 200px;
 }
 
 .site-list__item {
   .list();
 
-  color: @black;
+  border-top: 1px solid @nav-br-grey;
   background-color: @white;
 
   &--current {
@@ -14,15 +14,16 @@
 }
 
 .site-list__link {
-  .upper-text();
-  .link();
+  .upper-reg-text();
 
   font-size: @font-size-site-list;
+  font-weight: 500;
   line-height: 20px;
 
   display: block;
 
-  text-align: center;
+  box-sizing: content-box;
+  padding: 24px 0;
 
-  color: @black;
+  text-align: center;
 }

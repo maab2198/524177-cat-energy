@@ -1,11 +1,7 @@
 .navigation {
   position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  border-bottom: 1px solid @nav-br-grey;
+  margin: 0 auto;
 }
 
 .navigation__toggle {
@@ -29,4 +25,13 @@
   &--close {
     background: url("../img/icon-close.svg") no-repeat;
   }
+}
+
+.navigation__wrapper {
+  margin: 0 -20px;
+  padding: 0;
+}
+
+.navigation__list {
+  .list();
 }

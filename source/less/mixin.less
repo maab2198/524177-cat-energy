@@ -1,7 +1,3 @@
-.link() {
-  text-decoration: none;
-}
-
 .heading() {
   margin: 0;
 }
@@ -11,15 +7,6 @@
   padding: 0;
 
   list-style: none;
-}
-
-.upper-text () {
-  font-family: @font-family;
-  font-weight: 500;
-
-  text-transform: uppercase;
-
-  color: @black;
 }
 
 .lower-text () {
@@ -34,6 +21,8 @@
   margin: 0;
 
   text-transform: uppercase;
+
+  color: @black;
 }
 
 .rare-title() {
@@ -42,8 +31,14 @@
 
   font-size: @font-size-h3;
   line-height: 16px;
+}
 
-  color: @black;
+.middle-upper-title() {
+  .upper-reg-text();
+  .heading();
+
+  font-size: @font-size-h2;
+  line-height: 24px;
 }
 
 .middle-title() {
@@ -106,4 +101,10 @@
   left: 0;
 
   content: "";
+}
+
+.mobile-wrapper() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
