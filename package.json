@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "csscomb": "^4.2.0",
+    "normalize.less": "^1.0.0"
   }
 }

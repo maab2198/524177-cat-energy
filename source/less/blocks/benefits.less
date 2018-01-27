@@ -1,0 +1,74 @@
+.benefits {
+  background-color: @white;
+}
+
+.benefits__wrapper {
+  .mobile-wrapper();
+}
+
+.benefits__title {
+  .big-title();
+}
+
+.benefits__list {
+  .list();
+}
+
+.benefits__item {
+  .list();
+
+  position: relative;
+
+  display: block;
+
+  min-height: 60px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+
+  &::before {
+    .content();
+
+    width: 60px;
+    height: 60px;
+
+    background-color: @green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--leaf {
+    .content-none();
+
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    .content-none();
+
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--clock {
+    .content-none();
+
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
+
+  &--dining {
+    .content-none();
+
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+}
+
+.benefits__desc {
+  .desc();
+}

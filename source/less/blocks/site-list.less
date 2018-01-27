@@ -1,0 +1,29 @@
+.site-list {
+  min-height: 200px;
+}
+
+.site-list__item {
+  .list();
+
+  border-top: 1px solid @nav-br-grey;
+  background-color: @white;
+
+  &--current {
+    background-color: @white;
+  }
+}
+
+.site-list__link {
+  .upper-reg-text();
+
+  font-size: @font-size-site-list;
+  font-weight: 500;
+  line-height: 20px;
+
+  display: block;
+
+  box-sizing: content-box;
+  padding: 24px 0;
+
+  text-align: center;
+}

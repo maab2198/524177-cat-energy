@@ -1,0 +1,56 @@
+.main-form {
+  background-color: @white;
+}
+
+.main-form__wrapper {
+  .mobile-wrapper();
+}
+
+.main-form__content {
+  padding: 22px 0;
+
+  border: 0;
+
+  &--bordered {
+    margin: 0 -20px;
+
+    border-top: 1px solid @form-br-grey;
+    border-bottom: 1px solid @form-br-grey;
+  }
+}
+
+.main-form__heading {
+  .middle-title();
+}
+
+.main-form__label {
+  .rare-title();
+}
+
+.main-form__input {
+  border: 1px solid @form-br-grey;
+}
+
+.main-form__radio {
+  .content-none();
+
+  &--checked {
+    .content-none();
+  }
+}
+
+.main-form__checkbox {
+  .content-none();
+
+  &--checked {
+    .content-none();
+  }
+}
+
+.main-form_submit {
+  .content-none();
+}
+
+.main-form__small {
+  .desc();
+}
