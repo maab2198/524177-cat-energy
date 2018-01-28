@@ -1,13 +1,24 @@
-.program-promo {
-  background-color: @white;
-  background-image: url("../img/index-can-mobile@1x.png"),
-    url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 168px, center 0;
+@media(max-width: @tablet-size - 1px) {
+    .program-promo {
+    //background-color: @white;
+    background-image: url("../img/index-can-mobile@1x.png"),
+      url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 168px, center 0;
+  }
 }
 
 .program-promo__wrapper {
-  .mobile-wrapper();
+  .wrapper();
+  min-height: 500px;
+
+  @media (min-width: @tablet-size) {
+      min-height: 850px;
+  }
+
+  @media (min-width: @desktop-size) {
+      min-height: 630px;
+  }
 }
 
 .program-promo__title {
@@ -34,5 +45,5 @@
 }
 
 .program-promo__btn {
-  margin-top: 300px;
+  //margin-top: 300px;
 }

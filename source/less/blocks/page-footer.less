@@ -1,13 +1,24 @@
 .page-footer {
   width: 100%;
+  //background-color: @grey;
+  min-height: 240px;
 
-  background-color: @grey;
+  @media (min-width: @tablet-size) {
+      min-height: 150px;
+
+  }
 }
 
 .page-footer__wrapper {
-  .mobile-wrapper();
+  .wrapper();
 
   padding-bottom: 22px;
+  min-height: 240px;
+
+  @media (min-width: @tablet-size) {
+      min-height: 150px;
+
+  }
 }
 
 .page-footer__index-link {

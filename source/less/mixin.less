@@ -104,7 +104,29 @@
 }
 
 .mobile-wrapper() {
-  width: 320px;
+  width: @mobile-size;
   margin: 0 auto;
   padding: 0 20px;
+  @media (min-width: @tablet-size) {
+      width: @tablet-size;
+  }
+
+  @media (min-width: @desktop-size) {
+      width: @desktop-size;
+  }
 }
+.wrapper() {
+  width: @mobile-size;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: @tablet-size) {
+      width: @tablet-size;
+      padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-size) {
+      width: @desktop-size;
+      padding: 0 70px;
+  }
+}
+

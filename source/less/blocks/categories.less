@@ -1,13 +1,20 @@
 .categories {
-  padding: 20px;
 
-  background: @white;
+  //background: @white;
 }
 
 .categories__wrapper {
-  .mobile-wrapper();
-}
+  .wrapper();
+  min-height: 570px;
 
+  @media (min-width: @tablet-size) {
+      min-height: 800px;
+  }
+
+  @media (min-width: @desktop-size) {
+      min-height: 430px;
+  }
+}
 .categories__title {
   .upper-reg-text();
 

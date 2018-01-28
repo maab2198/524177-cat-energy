@@ -1,9 +1,18 @@
 .example {
-  background-color: @grey;
+  .content-none();
 }
 
 .example__wrapper {
-  .mobile-wrapper();
+  .wrapper();
+  min-height: 705px;
+
+  @media (min-width: @tablet-size) {
+      min-height: 1080px;
+  }
+
+  @media (min-width: @desktop-size) {
+      min-height: 610px;
+    }
 }
 
 .example__title {

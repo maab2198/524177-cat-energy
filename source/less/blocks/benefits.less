@@ -1,9 +1,18 @@
 .benefits {
-  background-color: @white;
+  .content-none();
 }
 
 .benefits__wrapper {
-  .mobile-wrapper();
+  .wrapper();
+  min-height: 430px;
+
+  @media (min-width: @tablet-size) {
+      min-height: 755px;
+  }
+
+  @media (min-width: @desktop-size) {
+      min-height: 470px;
+  }
 }
 
 .benefits__title {

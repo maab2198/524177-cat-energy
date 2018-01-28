@@ -1,5 +1,5 @@
 .contacts {
-  background-color: @white;
+  //background-color: @white;
 
   &--grey {
     background-color: @grey;
@@ -7,7 +7,16 @@
 }
 
 .contacts__wrapper {
-  .mobile-wrapper();
+  .wrapper();
+  min-height: 475px;
+
+  @media (min-width: @tablet-size) {
+      min-height: 600px;
+  }
+
+  @media (min-width: @desktop-size) {
+      min-height: 400px;
+    }
 }
 
 .contacts__title {
