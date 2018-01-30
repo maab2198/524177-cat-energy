@@ -1,5 +1,22 @@
 .show-more {
   .content-none();
+  padding: 24px 20px;
+  border-bottom: 1px solid @catalog-br-grey;
+
+
+  @media (min-width: @tablet-size) {
+    border: 1px solid @catalog-br-grey;
+    flex-basis: 325px;
+    margin-bottom: 35px;
+    margin-top: 105px;
+    padding: 40px 38px;
+    min-height: 435px;
+  }
+
+  @media (min-width: @desktop-size) {
+    flex-basis: 245px;
+  }
+
 }
 
 .show-more__btn {
@@ -20,4 +37,6 @@
 
 .show-more__subtitle {
   .p-text();
+
+
 }

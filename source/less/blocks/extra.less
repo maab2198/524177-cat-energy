@@ -1,23 +1,65 @@
 .extra {
-  background-color: @white;
+  //background-color: @white;
 }
 
 .extra__wrapper {
-  .mobile-wrapper();
+  .wrapper();
+
+  @media (min-width: @desktop-size) {
+    display: flex;
+    padding-bottom: 90px;
+  }
+
 }
 
 .extra__title {
+
   .middle-title();
+  .wrapper();
+  display: block;
+  line-height: 87px;
+  @media (min-width: @tablet-size) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding: 35px 50px;
+  }
+
 }
 
 .extra__list {
   .list();
+  @media (min-width: @desktop-size) {
+    width: 900px;
+  }
 }
 
 .extra__item {
   .list();
+  min-height: 130px;
+   @media (min-width: @tablet-size) {
+    min-height: 140px;
+    height: 140px;
+  }
+  @media (min-width: @desktop-size) {
 
-  padding: 24px 20px;
+    min-height: 71px;
+    height: 72px;
 
-  border-bottom: 1px solid @border-grey;
+  }
+
+}
+
+.extra__share {
+ min-height: 360px;
+ @media (min-width: @tablet-size) {
+    min-height: 340px;
+  }
+
+@media (min-width: @desktop-size) {
+    min-width: 245px;
+    min-height: 200px;
+  }
+
 }

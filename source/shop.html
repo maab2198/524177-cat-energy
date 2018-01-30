@@ -3,6 +3,7 @@
   <head>
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
   </head>
   <body>
@@ -282,7 +283,7 @@
                 </table>
                 <a href="#" class="product__btn btn">Заказать</a>
               </li>
-              <li class="catalog__show-more show-more">
+              <li class="catalog__item show-more">
                 <button class="show-more__btn"></button>
                 <h2 class="show-more__title">Показать еще 100500 товаров</h2>
                 <p class="show-more__subtitle">На самом деле вкусов гораздо больше!</p>
@@ -292,8 +293,8 @@
           </div>
       </section>
       <section class="page-main__extra extra">
+        <h2 class="extra__title">Дополнительные товары</h2>
         <div class="extra__wrapper">
-          <h2 class="extra__title">Дополнительные товары</h2>
           <ul class="extra__list">
             <li class="extra__item extra-product">
               <h3 class="extra-product__title">
@@ -329,19 +330,21 @@
             </li>
           </ul>
           <article class="extra__share share">
-            <p class="share__desc">Закажите все
-              и получите чехол для кота в подарок!</p>
+            <div class="share__wrapper">
+              <p class="share__desc">Закажите все
+                и получите чехол для кота в подарок!</p>
+            </div>
           </article>
         </div>
       </section>
-      <section class="page-main__contacts contacts--grey">
+      <section class="page-main__contacts contacts contacts--grey">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
           <figure class="contacts__map">
             <img class="contacts__map-img" src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
           </figure>
-        </div>
       </section>
     </main>
     <footer class="page-footer">

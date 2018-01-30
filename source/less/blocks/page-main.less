@@ -1,11 +1,21 @@
 .page-main {
   width: 100%;
-
   //background-color: @white;
 }
 
 .page-main__title {
   .big-title();
+  display: block;
+  line-height: 55px;
+  padding-top:15px;
+    @media (min-width: @tablet-size) {
+    line-height: 115px;
+  }
+
+  @media (min-width: @desktop-size) {
+    line-height: 165px;
+  }
+
 }
 
 .page-main__caption {
@@ -20,22 +30,23 @@
   min-height: 500px;
 
   @media (min-width: @tablet-size) {
-      min-height: 850px;
+    min-height: 850px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 630px;
+    min-height: 630px;
   }
 }
+
 .page-main__categories {
   min-height: 570px;
 
   @media (min-width: @tablet-size) {
-      min-height: 800px;
+    min-height: 800px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 430px;
+    min-height: 430px;
   }
 }
 
@@ -43,36 +54,36 @@
   min-height: 430px;
 
   @media (min-width: @tablet-size) {
-      min-height: 755px;
+    min-height: 755px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 470px;
-    }
+    min-height: 470px;
+  }
 }
 
 .page-main__example {
   min-height: 705px;
 
   @media (min-width: @tablet-size) {
-      min-height: 1080px;
+    min-height: 1080px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 610px;
-    }
+    min-height: 610px;
+  }
 }
 
 .page-main__contacts {
   min-height: 475px;
 
   @media (min-width: @tablet-size) {
-      min-height: 600px;
+    min-height: 600px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 400px;
-    }
+    min-height: 400px;
+  }
 }
 
 .page-main__catalog {

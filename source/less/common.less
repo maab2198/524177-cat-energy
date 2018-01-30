@@ -8,27 +8,42 @@ html {
   box-sizing: inherit;
 }
 
-body >*>*>*>*{
- // display: none;
+body > * > * > * > * {
+  // display: none;
 }
 
-.site-list{
+.site-list {
   display: none;
 }
 
-a,h2,h3,h1,b,p {
+a,
+h2,
+h3,
+h1,
+b,
+p {
   //display: none;
 }
 
+body > * {
+  outline: 1px solid green;
+}
 
-body >* {
-  outline: 1px solid green; }
+body > * > * {
+  outline: 1px solid red;
+}
 
-body >* >* {
-  outline: 1px solid red; }
+body > * > * > * {
+  outline: 1px solid yellow;
+}
 
-body >* >* >* {
-  outline: 1px solid yellow; }
+body > * > * > * > *{
+  outline: 1px solid pink;
+}
+
+body > * > * > * > * >*{
+  outline: 1px solid pink;
+}
 
 body {
   width: 100%;
@@ -36,28 +51,31 @@ body {
   margin: 0 auto;
 
   color: @black;
-  background: @grey url("../img/mobile.png") no-repeat 50% 0;
+  background: @grey url("../img/shop-mobile.png") no-repeat 50% 0;
+  //background: @grey url("../img/mobile.png") no-repeat 50% 0;
   background-size: 320px auto;
- // min-height: 3200px;
+  // min-height: 3200px;
 }
 
 @media (min-width: @tablet-size) {
   body {
-    background:@grey url("../img/tablet.png") no-repeat 50% 0;
+    background: url("../img/shop-tablet.png") no-repeat 50% 0;
+    //background: @grey url("../img/tablet.png") no-repeat 50% 0;
     background-size: 768px auto;
   }
 }
 
-
 @media (min-width: @desktop-size) {
   body {
-    background:  @grey url("../img/desktop.png") no-repeat 50% 0;
+    background: @grey url("../img/shop-desktop.png") no-repeat 50% 0;
+    //background: @grey url("../img/desktop.png") no-repeat 50% 0;
     background-size: 1440px auto;
   }
 }
 
 img {
   max-width: 100%;
+  display: none;
 }
 
 a {

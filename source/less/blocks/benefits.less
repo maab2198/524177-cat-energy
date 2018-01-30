@@ -1,21 +1,21 @@
 .benefits {
   .content-none();
-
 }
 
 .benefits__wrapper {
   .wrapper();
   //background-color: @white;
+
   min-height: 430px;
 
   @media (min-width: @tablet-size) {
-      min-height: 755px;
-      padding-top: 20px;
+    min-height: 755px;
+    padding-top: 20px;
   }
 
   @media (min-width: @desktop-size) {
-      min-height: 470px;
-      padding-top: 40px;
+    min-height: 470px;
+    padding-top: 40px;
   }
 }
 
@@ -25,18 +25,17 @@
 
 .benefits__list {
   .list();
-   @media (min-width: @tablet-size) {
-    min-height: 600px;
+
+  @media (min-width: @tablet-size) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    min-height: 600px;
   }
 
-    @media (min-width: @desktop-size) {
+  @media (min-width: @desktop-size) {
     min-height: 300px;
-
-
   }
 }
 
@@ -53,13 +52,16 @@
 
   &::before {
     .content();
-    top:-6px;
+
+    top: -6px;
+
     width: 60px;
     height: 60px;
 
     background-color: @green;
     background-repeat: no-repeat;
     background-position: center;
+
     @media (min-width: @tablet-size) {
       width: 80px;
       height: 80px;
@@ -67,15 +69,16 @@
   }
 
   @media (min-width: @tablet-size) {
-      width: 320px;
-      min-height: 240px;
-      margin-top: auto;
-      margin-bottom: auto;
-      outline: 1px solid pink;
-  }
-  @media (min-width: @desktop-size) {
-      width: 245px;
+    width: 320px;
+    min-height: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
 
+    outline: 1px solid pink;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 245px;
   }
 
   &--leaf {

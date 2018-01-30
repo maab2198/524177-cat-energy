@@ -11,40 +11,44 @@
 @media (min-width: @tablet-size) {
   .page-header__wrapper {
     display: flex;
+
     min-height: 100px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .page-header__wrapper {
-    min-height: 120px;
     display: flex;
+
+    min-height: 120px;
   }
 }
 
 .page-header__index-link {
   display: block;
 
-  min-height: 66px;
-  background:@grey;
   min-width: 100px;
+  min-height: 66px;
+
+  background: @grey;
 }
 
 @media (min-width: @tablet-size) {
   .page-header__index-link {
-    min-height: 100px;
     min-width: 195px;
+    min-height: 100px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .page-header__index-link {
-    min-height: 120px;
     min-width: 205px;
+    min-height: 120px;
   }
 }
+
 .page-header__ico {
-  padding-top:11px;
+  padding-top: 11px;
 }
 
 .page-header__logo {
@@ -52,27 +56,28 @@
 }
 
 .page-header__nav {
-  min-height: 200px;
-  background: @grey;
   min-width: 100px;
+  min-height: 200px;
+
+  background: @grey;
 }
 
 @media (min-width: @tablet-size) {
   .page-header__nav {
-    margin-left: auto;
+    min-width: 465px;
     min-height: 100px;
+    margin-left: auto;
 
     background: @grey;
-    min-width: 465px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .page-header__nav {
+    min-width: 570px;
+    min-height: 120px;
     margin-left: auto;
 
     background: @green;
-    min-height: 120px;
-    min-width: 570px;
   }
 }
