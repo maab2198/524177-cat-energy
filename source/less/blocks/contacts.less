@@ -1,8 +1,14 @@
 .contacts {
   position: relative;
 
+  background-color: @white;
+
   &--grey {
-    // background-color: @grey;
+    background-color: @grey;
+  }
+
+  &--grey .contacts__wrapper {
+    background-color: @grey;
   }
 }
 
@@ -10,8 +16,9 @@
   .wrapper();
 
   min-height: 112px;
-  //background-color: @white;
   padding-top: 17px;
+
+  background-color: @white;
 
   @media (min-width: @tablet-size) {
     display: flex;
@@ -56,10 +63,12 @@
 }
 
 .contacts__map {
-  width: 100%;
+  //width: 100%;
   //background-color: @green;
   min-height: 365px;
-  margin: 0;
+  margin: 0 -40px;
+
+  background: url("../img/map.png") repeat;
 
   @media (min-width: @tablet-size) {
     min-height: 400px;

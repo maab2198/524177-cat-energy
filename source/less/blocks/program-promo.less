@@ -1,10 +1,6 @@
 @media(max-width: @tablet-size - 1px) {
   .program-promo {
     //background-color: @white;
-    background-image: url("../img/index-can-mobile@1x.png"),
-    url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center 168px, center 0;
   }
 }
 
@@ -15,8 +11,15 @@
 
   min-height: 500px;
 
+  background-image: url("../img/index-can-mobile@1x.png"),
+    url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 168px, center 0;
+
   @media (min-width: @tablet-size) {
     min-height: 850px;
+
+    background: none;
   }
 
   @media (min-width: @desktop-size) {

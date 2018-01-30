@@ -8,74 +8,22 @@ html {
   box-sizing: inherit;
 }
 
-body > * > * > * > * {
-  // display: none;
-}
-
 @media (min-width: @tablet-size) {
   .site-list {
     display: none;
   }
 }
 
-a,
-h2,
-h3,
-h1,
-b,
-p {
-  //display: none;
-}
-
-body > * {
-  outline: 1px solid green;
-}
-
-body > * > * {
-  outline: 1px solid red;
-}
-
-body > * > * > * {
-  outline: 1px solid yellow;
-}
-
-body > * > * > * > * {
-  outline: 1px solid pink;
-}
-
-body > * > * > * > * > * {
-  outline: 1px solid pink;
-}
-
 body {
   width: 100%;
   /*-----EXTRA----*/
   margin: 0 auto;
+  padding: 0;
 
   color: @black;
-  //background: @grey url("../img/form-mobile.png") no-repeat 50% 0;
-  //background: @grey url("../img/shop-mobile.png") no-repeat 50% 0;
-  //background: @grey url("../img/mobile.png") no-repeat 50% 0;
-  background-size: 320px auto;
-
-  @media (min-width: @tablet-size) {
-    //background: url("../img/form-tablet.png") no-repeat 50% 0;
-    //background: url("../img/shop-tablet.png") no-repeat 50% 0;
-    //background: @grey url("../img/tablet.png") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-
-  @media (min-width: @desktop-size) {
-    //background: @grey url("../img/form-desktop.png") no-repeat 50% 0;
-    //background: @grey url("../img/shop-desktop.png") no-repeat 50% 0;
-    //background: @grey url("../img/desktop.png") no-repeat 50% 0;
-    background-size: 1440px auto;
-  }
 }
 
 img {
-  display: none;
-
   max-width: 100%;
 }
 

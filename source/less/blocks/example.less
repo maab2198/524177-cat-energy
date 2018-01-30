@@ -1,9 +1,14 @@
 .example {
   .content-none();
+
+  background-color: @grey;
+
+  @media (min-width: @tablet-size) {
+    background-color: @white;
+  }
 }
 
 .example__wrapper {
-  //background-color: @grey;
   .wrapper();
 
   min-height: 705px;
@@ -17,10 +22,10 @@
     align-items: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    //background-image:
-    //linear-gradient( @white 150px , @grey 150px, @grey);
 
     min-height: 610px;
+
+    background-image: linear-gradient( @white 150px , @grey 150px, @grey);
   }
 }
 
