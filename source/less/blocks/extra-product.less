@@ -1,11 +1,13 @@
 .extra-product {
   padding: 16px 0;
+
   border-bottom: 1px solid @border-grey;
 
   @media (min-width: @tablet-size) {
+    padding: 28px 38px;
+
     border: 1px solid @border-grey;
     border-bottom: 0;
-    padding: 28px 38px;
   }
 
   &::last-child {
@@ -14,10 +16,12 @@
 
   @media (min-width: @desktop-size) {
     display: flex;
-    border-left:0;
-    border-right:0;
-    padding: 15px 0px;
     justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-right: 0;
+    border-left: 0;
   }
 }
 
@@ -44,4 +48,3 @@
     width: 245px;
   }
 }
-

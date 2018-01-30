@@ -7,20 +7,14 @@
   }
 
   @media (min-width: @desktop-size) {
-
-    padding: 0;
-    margin-left: auto;
     align-self: stretch;
+
+    margin-left: auto;
+    padding: 0;
   }
 }
 
 .share__wrapper {
- @media (min-width: @tablet-size) {
-    min-height: 200px;
-  }
-  @media (min-width: @desktop-size) {
-    min-height: 290px;
-  }
   background-color: @green;
   background-image: url("../img/icon-gift.svg"),
   url("../img/gift-photo-mobile@1x.jpg");
@@ -28,6 +22,13 @@
   background-position: center 65px, center;
   background-size: 20%, 100%;
 
+  @media (min-width: @tablet-size) {
+    min-height: 200px;
+  }
+
+  @media (min-width: @desktop-size) {
+    min-height: 290px;
+  }
 }
 
 .share__desc {
@@ -42,7 +43,7 @@
 
   color: @white;
 
-   @media (min-width: @tablet-size) {
-    padding-top: 0px;
+  @media (min-width: @tablet-size) {
+    padding-top: 0;
   }
 }

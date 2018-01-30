@@ -1,28 +1,31 @@
 .product {
-  border-bottom: 1px solid @catalog-br-grey;
   //background-color: @white;
   padding: 24px 20px;
-   @media (min-width: @tablet-size) {
+
+  border-bottom: 1px solid @catalog-br-grey;
+
+  @media (min-width: @tablet-size) {
     flex-basis: 325px;
+
     margin-bottom: 35px;
     padding: 40px 38px;
     padding-top: 145px;
-    border:0;
+
+    border: 0;
     //background-image:
     //linear-gradient( @white 105px , @grey 105px, @grey);
   }
 
   @media (min-width: @desktop-size) {
     flex-basis: 245px;
-
   }
-
 }
 
 .product__img {
+  display: none;
+
   width: 140px;
   height: 144px;
-  display: none;
 }
 
 .product__title {

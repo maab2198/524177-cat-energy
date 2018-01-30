@@ -5,21 +5,41 @@
 
 .page-main__title {
   .big-title();
-  display: block;
+
   line-height: 55px;
-  padding-top:15px;
-    @media (min-width: @tablet-size) {
+
+  display: block;
+
+  padding-top: 15px;
+
+  @media (min-width: @tablet-size) {
     line-height: 115px;
   }
 
   @media (min-width: @desktop-size) {
     line-height: 165px;
   }
-
 }
 
 .page-main__caption {
   .desc-black();
+
+  font-family: @font-family;
+  font-size: @font-size-btn;
+  font-weight: 400;
+  line-height: 17px;
+
+  padding-bottom: 10px;
+
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-size) {
+    display: block;
+
+    width: 330px;
+    height: 80px;
+    padding: 40px;
+  }
 }
 
 .page-main__wrapper {
