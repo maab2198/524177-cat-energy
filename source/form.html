@@ -38,14 +38,14 @@
       </div>
       <form class="page-main__form main-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="main-form__wrapper">
-          <section class="main-form__content">
+          <section class="main-form__content main-form__content--personal">
             <legend class="main-form__heading visually-hidden">Личные данные (вашего любимца)</legend>
             <p class="main-form__p">
-              <label class="main-form__label" for="name">Имя:<sup>*</sup></label>
+              <label class="main-form__label" for="name">Имя:<sup class="main-form__sup">*</sup></label>
               <input type="text" class="main-form__input" id="name" name="name" placeholder="Барсик" required>
             </p>
             <p class="main-form__p">
-              <label class="main-form__label" for="weight">Вес(кг):<sup>*</sup></label>
+              <label class="main-form__label" for="weight">Вес(кг):<sup class="main-form__sup">*</sup></label>
               <input type="text" class="main-form__input" id="weight" name="weight" placeholder="7" pattern="[0-9]{,2}" required>
             </p>
             <p class="main-form__p">
@@ -53,7 +53,7 @@
               <input type="text" class="main-form__input" id="age" name="age" placeholder="7" pattern="[0-9]{,2}">
             </p>
           </section>
-          <section class="main-form__content main-form__content--bordered">
+          <section class="main-form__content main-form__content--type">
             <legend class="main-form__heading visually-hidden">Ваша цель</legend>
             <p class="main-form__p main-form__p--wide">
               <input type="radio" class="main-form__radio main-form__radio--checked" id="slim" name="program_type" value="slimming" checked>
@@ -61,31 +61,31 @@
             </p>
             <p class="main-form__p main-form__p--wide">
               <input type="radio" class="main-form__radio" id="wg" name="program_type" value="weight gain">
-              <label class="main-form__label" for="wg"> Набор веса </label>
+              <label class="main-form__label" for="wg"> Набор массы </label>
             </p>
             <p class="main-form__p main-form__p--wide">
               <input type="radio" class="main-form__radio" id="nm" name="program_type" value="I don't know">
               <label class="main-form__label" for="nm"> Не знаю (Нужен ваш совет) </label>
             </p>
           </section>
-          <legend class="main-form__heading">Контактные данные (владельца кота)</legend>
-          <section class="main-form__content">
+          <legend class="main-form__heading ">Контактные данные (владельца кота)</legend>
+          <section class="main-form__content main-form__content--owner">
 
             <p class="main-form__p">
-              <label class="main-form__label" for="email">E-mail: <sup>*</sup></label>
+              <label class="main-form__label" for="email">E-mail:<sup class="main-form__sup">*</sup></label>
               <input type="email" class="main-form__input main-form__input--email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="main-form__p">
-              <label class="main-form__label" for="tel">Телефон:<sup>*</sup></label>
+              <label class="main-form__label" for="tel">Телефон:<sup class="main-form__sup">*</sup></label>
               <input type="tel" class="main-form__input main-form__input--phone" id="tel" name ="phone" placeholder="8 (960) 900-60-90" pattern="\d\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </p>
           </section>
-          <legend class="main-form__heading">Комментарий</legend>
-          <section class="main-form__content">
+          <legend class="main-form__heading ">Комментарий</legend>
+          <section class="main-form__content main-form__content--comment">
             <textarea class="main-form__text" rows="5">Расскажите обо всех повадках кота</textarea>
           </section>
-          <legend class="main-form__heading">Дополнительно</legend>
-          <section class="main-form__content ">
+          <legend class="main-form__heading ">Дополнительно</legend>
+          <section class="main-form__content main-form__content--extra ">
 
             <p class="main-form__p main-form__p--wide">
               <input type="checkbox" class="main-form__checkbox main-form__checkbox--checked" id="sweetener" name="add" value="sweetener" checked>
@@ -103,9 +103,10 @@
               <input type="checkbox" class="main-form__checkbox" id="vitamins" name="add" value="vitamins">
               <label class="main-form__label" for="vitamins">Витамины</label>
             </p>
-          </section>
+
           <button class="main-form_submit btn" type="submit">Отправить заявку</button>
-          <p class="main-form__small"><sup>*</sup>— Обязательные поля</p>
+          <p class="main-form__small"><sup class="main-form__sup">*</sup>— Обязательные поля</p>
+          </section>
         </div>
       </form>
       <section class="page-main__contacts contacts contacts--grey">
