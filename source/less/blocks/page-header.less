@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+
   width: 100%;
 
   background-color: @white;
@@ -14,7 +16,12 @@
   }
 
   @media (min-width: @desktop-size) {
+    position: absolute;
+    left: 50%;
+
     min-height: 120px;
+
+    transform: translateX(-50%;);
   }
 }
 

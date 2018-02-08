@@ -1,7 +1,5 @@
-@media (max-width: @tablet-size - 1px) {
-  .program-promo {
-    background-color: @white;
-  }
+.program-promo {
+  min-height: 500px;
 }
 
 .program-promo__wrapper {
@@ -23,7 +21,30 @@
   }
 
   @media (min-width: @desktop-size) {
-    min-height: 630px;
+    z-index: -2;
+    top: -120px;
+
+    min-height: 810px;
+    margin-bottom: -120px;
+  }
+
+  @media (min-width: @tablet-size) {
+    background-color: @white;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 168px;
+  }
+
+  @media (min-width: @desktop-size) {
+    min-width: 1440px;
+    padding-left: 110px;
+
+    background-color: @white;
+    background-image: url("../img/index-can-mobile@1x.png"),
+      url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 168px, 100% 50%;
+    background-size: 400px, 680px 100%;
   }
 }
 
@@ -39,6 +60,12 @@
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-size) {
+    text-align: left;
+
+    color: @black;
+  }
 }
 
 .program-promo__slogan {
@@ -51,6 +78,12 @@
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-size) {
+    text-align: left;
+
+    color: @black;
+  }
 }
 
 .program-promo__btn {
@@ -58,4 +91,8 @@
   bottom: 22px;
 
   width: 280px;
+
+  @media (min-width: @tablet-size) {
+    position: relative;
+  }
 }
