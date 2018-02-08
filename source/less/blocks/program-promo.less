@@ -17,18 +17,6 @@
   @media (min-width: @tablet-size) {
     min-height: 850px;
 
-    background: none;
-  }
-
-  @media (min-width: @desktop-size) {
-    z-index: -2;
-    top: -120px;
-
-    min-height: 810px;
-    margin-bottom: -120px;
-  }
-
-  @media (min-width: @tablet-size) {
     background-color: @white;
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
@@ -36,7 +24,14 @@
   }
 
   @media (min-width: @desktop-size) {
+    position: relative;
+    z-index: -2;
+    top: -120px;
+
     min-width: 1440px;
+    min-height: 690px;
+    margin-bottom: -120px;
+    padding-top: 120px;
     padding-left: 110px;
 
     background-color: @white;
@@ -53,6 +48,8 @@
 
   font-size: @font-size-big;
   line-height: @font-size-big;
+
+  z-index: 2;
 
   margin: 0;
   padding-top: 26px;

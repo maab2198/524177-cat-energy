@@ -20,7 +20,16 @@
 .site-list__item {
   .list();
 
+  color: @black;
   border-top: 1px solid @nav-br-grey;
+
+  &--white {
+    color: @white;
+  }
+
+  &--white::after {
+    color: @white;
+  }
 
   @media (min-width: @tablet-size) {
     margin-right: 25px;
@@ -83,8 +92,6 @@
 
   @media (min-width: @desktop-size) {
     font-size: 20px;
-
-    color: @white;
   }
 }
 

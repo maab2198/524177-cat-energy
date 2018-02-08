@@ -1,13 +1,12 @@
-var pageHeader = document.querySelector('.page-header');
 var navMain = document.querySelector('.navigation');
-var navToggle = document.querySelector('.page-header__toggle');
+var navToggle = document.querySelector('.navigation__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+navMain.classList.remove('navigation--nojs');
 
 navToggle.addEventListener('click', function() {
 
-navToggle.classList.toggle("page-header__toggle--close")
-  if (navToggle.classList.contains('page-header__toggle--close')) {
+navToggle.classList.toggle("navigation__toggle--close")
+  if (navToggle.classList.contains('navigation__toggle--close')) {
     navMain.classList.add('navigation--opened');
   }
   else  {
