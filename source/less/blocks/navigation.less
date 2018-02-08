@@ -1,35 +1,38 @@
 .navigation {
-  position: relative;
-}
+  display: none;
 
-.navigation__toggle {
-  font-size: 0;
+  background: @white;
 
-  position: absolute;
-  top: -30px;
-  right: 0;
+  &--opened {
+    display: block;
+  }
 
-  display: block;
+  @media (min-width: @tablet-size) {
+    display: block;
 
-  width: 20px;
-  height: 14px;
-  padding: 0;
+    margin-left: auto;
+    //min-height: 200px;
+  }
 
-  cursor: pointer;
+  @media (min-width: @desktop-size) {
+    min-width: 570px;
 
-  border: none;
-  background: url("../img/icon-close.svg") no-repeat;
-
-  &--close {
-    background: url("../img/icon-close.svg") no-repeat;
+    background: @green;
   }
 }
 
 .navigation__wrapper {
   margin: 0 -20px;
   padding: 0;
+
+  @media (min-width: @tablet-size) {
+    display: block;
+
+    margin: 0;
+  }
 }
 
-.navigation__list {
-  .list();
+/*.navigation__list {
+
 }
+*/

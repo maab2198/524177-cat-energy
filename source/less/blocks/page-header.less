@@ -1,83 +1,93 @@
 .page-header {
   width: 100%;
 
-  //background-color: @white;
+  background-color: @white;
 }
 
 .page-header__wrapper {
   .wrapper();
-}
 
-@media (min-width: @tablet-size) {
-  .page-header__wrapper {
+  @media (min-width: @tablet-size) {
     display: flex;
 
     min-height: 100px;
   }
-}
 
-@media (min-width: @desktop-size) {
-  .page-header__wrapper {
-    display: flex;
-
+  @media (min-width: @desktop-size) {
     min-height: 120px;
   }
 }
 
 .page-header__index-link {
-  display: block;
+  //display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //width: 100%;
 
-  min-width: 100px;
-  min-height: 66px;
+  min-height: 65px;
 
-  background: @grey;
-}
+  background: @white;
 
-@media (min-width: @tablet-size) {
-  .page-header__index-link {
-    min-width: 195px;
+  @media (min-width: @tablet-size) {
+    min-width: 180px;
     min-height: 100px;
   }
-}
 
-@media (min-width: @desktop-size) {
-  .page-header__index-link {
+  @media (min-width: @desktop-size) {
     min-width: 205px;
     min-height: 120px;
   }
 }
 
 .page-header__ico {
-  padding-top: 11px;
+  margin-top: -7px;
+
+  @media (min-width: @tablet-size) {
+    display: none;
+  }
 }
 
 .page-header__logo {
-  .content-none();
-}
+  margin-left: -13px;
 
-.page-header__nav {
-  min-width: 100px;
-  min-height: 200px;
-
-  background: @grey;
-}
-
-@media (min-width: @tablet-size) {
-  .page-header__nav {
-    min-width: 465px;
-    min-height: 100px;
-    margin-left: auto;
-
-    background: @grey;
+  @media (min-width: @tablet-size) {
+    display: none;
   }
 }
 
-@media (min-width: @desktop-size) {
-  .page-header__nav {
-    min-width: 570px;
-    min-height: 120px;
-    margin-left: auto;
+.page-header__toggle {
+  font-size: 0;
 
-    background: @green;
+  display: block;
+
+  width: 24px;
+  height: 18px;
+  margin-left: -4px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+
+  &--close {
+    width: 20px;
+    height: 18px;
+    margin: 0;
+
+    background: url("../img/icon-close.svg") no-repeat;
   }
+
+  @media (min-width: @tablet-size) {
+    display: none;
+  }
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs .navigation {
+  display: block;
 }
