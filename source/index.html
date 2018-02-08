@@ -107,7 +107,7 @@
           <p class="contacts__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
           <figure class="contacts__map">
-            <img class="contacts__map-img" src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
+            <img  src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
           </figure>
       </section>
     </main>
@@ -138,22 +138,6 @@
         </section>
       </div>
     </footer>
-    <script>
-      var pageHeader = document.querySelector('.page-header');
-      var navMain = document.querySelector('.navigation');
-      var navToggle = document.querySelector('.page-header__toggle');
-
-      pageHeader.classList.remove('page-header--nojs');
-
-     navToggle.addEventListener('click', function() {
-        navToggle.classList.toggle("page-header__toggle--close")
-        if (navToggle.classList.contains('page-header__toggle--close')) {
-          navMain.classList.add('navigation--opened');
-        }
-        else  {
-          navMain.classList.remove('navigation--opened');
-        }
-      });
-    </script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>
