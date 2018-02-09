@@ -23,16 +23,9 @@
   color: @black;
   border-top: 1px solid @nav-br-grey;
 
-  &--white {
-    color: @white;
-  }
-
-  &--white::after {
-    color: @white;
-  }
 
   @media (min-width: @tablet-size) {
-    margin-right: 25px;
+    margin-right: 35px;
 
     border: 0;
 
@@ -54,44 +47,51 @@
         content: "";
 
         background: @green;
-
-        @media (min-width: @desktop-size) {
-          background: @white;
-        }
       }
     }
   }
 
   @media (min-width: @desktop-size) {
-    margin-right: 40px;
+    margin-right: 42px;
+
+    &--white {
+      color: @white;
+    }
+
+    &--white::after {
+      background: @white;
+    }
+
   }
 }
 
 .site-list__item a {
-  .upper-reg-text();
-
-  font-size: @font-size-site-list;
+  font-family: @font-family;
+  font-size: @font-size-list;
+  font-weight: 400;
   font-weight: 500;
   line-height: 21px;
 
   display: block;
 
+  margin: 0;
   padding-top: 21px;
   padding-bottom: 24px;
 
   text-align: center;
+  text-transform: uppercase;
+
+  color: inherit;
 
   @media (min-width: @tablet-size) {
-    .upper-reg-text ();
-
-    font-size: 18px;
+    font-size: @font-size-tlist;
     line-height: 24px;
 
     padding: 0;
   }
 
   @media (min-width: @desktop-size) {
-    font-size: 20px;
+    font-size: @font-size-tlist;
   }
 }
 
