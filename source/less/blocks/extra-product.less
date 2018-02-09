@@ -1,5 +1,28 @@
 .extra-product {
-  .content-none();
+  padding: 16px 0;
+
+  border-bottom: 1px solid @border-grey;
+
+  @media (min-width: @tablet-size) {
+    padding: 28px 38px;
+
+    border: 1px solid @border-grey;
+    border-bottom: 0;
+  }
+
+  &:last-child {
+    border: 1px solid @border-grey;
+  }
+
+  @media (min-width: @desktop-size) {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-right: 0;
+    border-left: 0;
+  }
 }
 
 .extra-product__title {
@@ -21,9 +44,7 @@
 }
 
 .extra-product__btn {
-  .content-none();
-}
-
-.extra__share {
-  .content-none();
+  @media (min-width: @desktop-size) {
+    width: 245px;
+  }
 }

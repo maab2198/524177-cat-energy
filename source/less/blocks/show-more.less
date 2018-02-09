@@ -1,5 +1,24 @@
 .show-more {
   .content-none();
+
+  padding: 24px 20px;
+
+  border-bottom: 1px solid @catalog-br-grey;
+
+  @media (min-width: @tablet-size) {
+    flex-basis: 325px;
+
+    min-height: 435px;
+    margin-top: 105px;
+    margin-bottom: 35px;
+    padding: 40px 38px;
+
+    border: 1px solid @catalog-br-grey;
+  }
+
+  @media (min-width: @desktop-size) {
+    flex-basis: 245px;
+  }
 }
 
 .show-more__btn {

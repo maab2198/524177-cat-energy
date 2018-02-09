@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta charset="utf-8">
     <title>Cat Energy</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__index-link">
-          <img class="page-header__ico" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat energy icon">
+          <img class="page-header__ico" src="img/icon-logo-mobile.svg" width="33" height="39" alt="Cat energy icon">
           <img class="page-header__logo" src="img/logo-mobile-header.svg" width="105" height="18" alt="Cat energy">
         </a>
-        <nav class="page-header__nav navigation">
-          <button class="navigation__toggle" type="button">Меню</button>
+        <nav class="navigation navigation--nojs">
+          <button class="
+          navigation__toggle " type="button">Меню</button>
           <div class="navigation__wrapper">
             <ul class="navigation__list site-list">
-              <li class="site-list__item site-list__item--current">
+              <li class="site-list__item site-list__item--white site-list__item--current">
                 <a class="site-list__link">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--white">
                 <a href="shop.html" class="site-list__link">Каталог продукции</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--white">
                 <a href="form.html" class="site-list__link">Подбор программы</a>
               </li>
             </ul>
@@ -43,15 +44,15 @@
         <div class="categories__wrapper">
           <h2 class="categories__title visually-hidden">Наши программы питания</h2>
           <ul class="categories__list">
-            <li class="categories__item categories__item--slim">
-              <h3 class="categories__title">Похудение</h3>
-              <p class="categories__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="#" class="categories__link">Каталог Slim<span class="categories__control"></span></a>
+            <li class="categories__item category category--slim">
+              <h3 class="category__title">Похудение</h3>
+              <p class="category__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="#" class="category__link">Каталог Slim<span class="category__control"></span></a>
             </li>
-            <li class="categories__item categories__item--pro">
-              <h3 class="categories__title">Набор массы</h3>
-              <p class="categories__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="#" class="categories__link">Каталог pro<span class="categories__control"></span></a>
+            <li class="categories__item category category--pro">
+              <h3 class="category__title">Набор массы</h3>
+              <p class="category__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a href="#" class="category__link">Каталог pro<span class="category__control"></span></a>
             </li>
           </ul>
         </div>
@@ -91,7 +92,7 @@
           <div class="example_compare slider">
             <img class="example__img slider__item" src="img/before-mobile@1x.png" width="320" height="240" alt="Было">
             <b class="example__img-caption example__img-caption--before">Было</b>
-            <img class="example__after-img slider__item" src="img/after-mobile@1x.png" width="320" height="240" alt="Стало">
+            <img class=" visually-hidden example__after-img slider__item" src="img/after-mobile@1x.png" width="320" height="240" alt="Стало">
             <b class="example__img-caption example__img-caption--after">Стало</b>
             <div class="example__controls slider__toggles">
               <button class="slider__toggle slider__toggle--current" type="button">Было</button>
@@ -104,10 +105,10 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <figure class="contacts__map">
-            <img class="contacts__map-img" src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
-          </figure>
         </div>
+          <figure class="contacts__map">
+            <img  src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
+          </figure>
       </section>
     </main>
     <footer class="page-footer">
@@ -132,10 +133,25 @@
         <section class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            <svg class="copyright__logo"
+              version="1.0"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="26.943px"
+              height="34.09px"
+              viewBox="0 0 26.943 34.09"
+              enable-background="new 0 0 26.943 34.09"
+              xml:space="preserve"
+              fill="#666666">
+              <path
+                d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </section>
       </div>
-    </footer>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

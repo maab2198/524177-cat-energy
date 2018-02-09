@@ -1,26 +1,80 @@
 .program-promo {
-  background-color: @white;
+  min-height: 500px;
+}
+
+.program-promo__wrapper {
+  .wrapper();
+
+  position: relative;
+
+  min-height: 500px;
+
   background-image: url("../img/index-can-mobile@1x.png"),
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 168px, center 0;
-}
 
-.program-promo__wrapper {
-  .mobile-wrapper();
+  @media (min-width: @tablet-size) {
+    min-height: 850px;
+    padding-left: 118px;
+
+    background-color: @white;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 94% 630px;
+  }
+
+  @media (min-width: @desktop-size) {
+    position: relative;
+    z-index: -2;
+    top: -120px;
+
+    min-width: 1440px;
+    min-height: 690px;
+    margin-bottom: -120px;
+    padding-top: 120px;
+    padding-left: 190px;
+
+    background-color: @white;
+    background-image: url("../img/index-can-mobile@1x.png"),
+      url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 570px 140px, 100% 50%;
+    background-size: 550px 500px, 680px 100%;
+  }
 }
 
 .program-promo__title {
   .lower-text();
 
   font-size: @font-size-big;
+  line-height: @font-size-big;
+
+  z-index: 2;
 
   margin: 0;
-  padding-top: 29px;
+  padding-top: 26px;
 
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-size) {
+    font-size: @font-size-tbig;
+    line-height: @font-size-tbig;
+
+    width: 425px;
+    padding-top: 40px;
+
+    text-align: left;
+
+    color: @black;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-top: 103px;
+  }
 }
 
 .program-promo__slogan {
@@ -28,11 +82,42 @@
 
   font-size: @font-size-btn;
 
+  padding-top: 23px;
+
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-size) {
+    font-size: @font-size-tbtn;
+    line-height: @font-size-tbtn;
+
+    display: block;
+
+    width: 300px;
+    padding-top: 42px;
+
+    text-align: left;
+
+    color: @black;
+  }
 }
 
 .program-promo__btn {
-  margin-top: 300px;
+  position: absolute;
+  bottom: 22px;
+
+  width: 280px;
+
+  @media (min-width: @tablet-size) {
+    position: relative;
+    bottom: 0;
+
+    width: 245px;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-size) {
+    margin-top: 52px;
+  }
 }

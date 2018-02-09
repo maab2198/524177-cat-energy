@@ -1,12 +1,35 @@
 .share {
-  min-height: 280px;
+  padding: 35px 0;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 70px;
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: @desktop-size) {
+    align-self: stretch;
+
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+.share__wrapper {
+  min-height: 360px;
 
   background-color: @green;
-  background-image: url("../img/icon-gift.svg"),
-    url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 65px, center;
-  background-size: 20%, 100%;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @media (min-width: @tablet-size) {
+    min-height: 200px;
+  }
+
+  @media (min-width: @desktop-size) {
+    min-height: 290px;
+  }
 }
 
 .share__desc {
@@ -20,4 +43,8 @@
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 0;
+  }
 }
