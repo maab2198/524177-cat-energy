@@ -4,11 +4,16 @@
 
 .catalog__list {
   .list();
+  //background: @white;
 
-  border-top: 1px solid @catalog-br-grey;
-  background: @white;
+  margin-right: -1px;
+  margin-left: -1px;
+
+  border: 1px solid @catalog-br-grey;
 
   @media (min-width: @tablet-size) {
+    border: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

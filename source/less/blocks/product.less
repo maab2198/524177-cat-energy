@@ -1,18 +1,35 @@
 .product {
   //background-color: @white;
-  padding: 24px 20px;
+  padding: 0 20px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid @catalog-br-grey;
+
+  @media (max-width: @mobile-size-only) {
+    display: flex;
+    align-items: flex-start;
+    //flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 
   @media (min-width: @tablet-size) {
     flex-basis: 325px;
 
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     padding: 40px 38px;
-    padding-top: 145px;
+    padding-top: 105px;
+
+    text-align: center;
 
     border: 0;
     background-image: linear-gradient(@white 105px, @grey 105px, @grey);
+
+    &:nth-of-type(2n) .product__img {
+      width: 195px;
+      height: 208px;
+      margin-top: -86px;
+    }
   }
 
   @media (min-width: @desktop-size) {
@@ -20,21 +37,104 @@
   }
 }
 
-.product__img {
-  display: none;
+.product__inner {
+  flex-shrink: 2;
 
+  width: 50%;
+  padding-top: 22px;
+
+  @media (min-width: @tablet-size) {
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+.product__img {
+  //display: none;
   width: 140px;
-  height: 144px;
+  height: 138px;
+
+  @media (min-width: @tablet-size) {
+    width: 161px;
+    height: 172px;
+    margin-top: -50px;
+  }
 }
 
 .product__title {
   .rare-title();
+
+  width: 80px;
+
+  @media (min-width: @tablet-size) {
+    font-size: 20px;
+
+    width: 129px;
+    margin: 0 auto;
+  }
 }
 
 .product__link {
+  line-height: 20px;
+
   color: @black;
 }
 
-.product__info {
+.product__info tbody {
   .p-text();
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding-top: 11px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 17px;
+    padding-bottom: 35px;
+  }
 }
+
+.product__info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-collapse: collapse;
+}
+
+.product__btn {
+  font-size: 16px;
+  line-height: 20px;
+
+  padding: 10px 0;
+}
+
+.product__info  tr {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 9px;
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid @border-grey;
+  }
+}
+
+.product__info td {
+  line-height: 16px;
+
+  width: auto;
+  padding: 0;
+}
+
+.product__field {
+  text-align: right;
+}
+/*
+.product__field, .product__value {
+
+}
+*/
