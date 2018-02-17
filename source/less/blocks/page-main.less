@@ -10,13 +10,20 @@
 
   display: block;
 
+  margin: 0 -20px;
+  padding: 0 20px;
   padding-top: 15px;
   padding-bottom: 32px;
 
-  //catalog!
+  border-top: 1px solid @nav-br-grey;
+
   @media (min-width: @tablet-size) {
-    padding-bottom: 64px;
+    margin: 0;
+    padding: 0;
     padding-top: 43px;
+    padding-bottom: 64px;
+
+    border: 0;
   }
 
   @media (min-width: @desktop-size) {
@@ -85,26 +92,6 @@
   @media (min-width: @desktop-size) {
     min-height: 610px;
   }
-}
-
-.page-main__contacts {
-  min-height: 475px;
-
-  @media (min-width: @tablet-size) {
-    min-height: 600px;
-  }
-
-  @media (min-width: @desktop-size) {
-    min-height: 400px;
-  }
-}
-
-.page-main__catalog {
-  .content-none();
-}
-
-.page-main__extra {
-  .content-none();
 }
 
 .page-main__form {

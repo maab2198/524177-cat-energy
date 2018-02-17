@@ -1,14 +1,15 @@
 .product {
-  //background-color: @white;
+  .list();
+
   padding: 0 20px;
   padding-bottom: 24px;
 
   border-bottom: 1px solid @catalog-br-grey;
+  background-color: @white;
 
   @media (max-width: @mobile-size-only) {
     display: flex;
     align-items: flex-start;
-    //flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -16,8 +17,8 @@
   @media (min-width: @tablet-size) {
     flex-basis: 325px;
 
-    margin-bottom: 36px;
-    padding: 40px;
+    margin-bottom: 37px;
+    padding: 40px 38px;
     padding-top: 105px;
 
     text-align: center;
@@ -135,8 +136,3 @@
 .product__field {
   text-align: right;
 }
-/*
-.product__field, .product__value {
-
-}
-*/
