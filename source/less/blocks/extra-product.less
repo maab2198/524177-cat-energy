@@ -1,4 +1,5 @@
 .extra-product {
+  .list();
   padding-top: 12px;
   padding-bottom: 17px;
 
@@ -24,6 +25,7 @@
     justify-content: space-between;
 
     padding: 16px 0;
+    padding-bottom: 15px;
 
     border-right: 0;
     border-left: 0;
@@ -95,34 +97,31 @@
 
 .extra-product__info td {
   line-height: 16px;
-  //width: auto;
-
   padding: 0;
-  //display: block;
+  .desc();
 }
 
 .extra-product__count {
-  .desc();
-
   @media (min-width: @tablet-size) {
     text-align: right;
   }
 }
 
 .extra-product__price {
-  .desc();
-
   text-align: right;
 
   @media (min-width: @tablet-size) {
     width: 95px;
+  }
+  @media (min-width: @desktop-size) {
+    width: 45px;
+    text-align: left;
   }
 }
 
 .extra-product__btn {
   font-size: 16px;
   line-height: 20px;
-
   padding: 10px 0;
 
   @media (min-width: @desktop-size) {
