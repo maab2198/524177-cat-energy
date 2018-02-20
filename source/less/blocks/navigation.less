@@ -3,7 +3,9 @@
   background: @white;
 
   &--opened .navigation__list {
-    display: block;
+    @media (max-width: @mobile-size-only) {
+      display: block;
+    }
   }
 
   @media (min-width: @tablet-size) {

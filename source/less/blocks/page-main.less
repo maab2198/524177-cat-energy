@@ -46,11 +46,18 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-size) {
+    font-size: @font-size-list;
+    line-height: 30px;
+
     display: block;
 
-    width: 330px;
-    height: 50px;
+    width: 410px;
+    margin-top: -6px;
     padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-size) {
+    margin-left: -40px;
   }
 }
 

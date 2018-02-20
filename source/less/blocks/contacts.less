@@ -7,16 +7,18 @@
     background-color: @grey;
   }
 
-  &--grey .contacts__wrapper {
-    background-color: @grey;
+  @media (min-width: @desktop-size) {
+    &--grey .contacts__wrapper {
+      background-color: @grey;
+    }
   }
 }
 
 .contacts__wrapper {
   .wrapper();
 
-  min-height: 112px;
-  padding-top: 17px;
+  padding-top: 29px;
+  padding-bottom: 24px;
 
   //background-color: @white;
 
@@ -48,7 +50,7 @@
 
   display: inline-block;
 
-  width: 130px;
+  width: 136px;
 
   color: @black;
 
