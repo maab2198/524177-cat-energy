@@ -78,25 +78,34 @@
       </section>
       <section class="page-main__example example">
         <div class="example__wrapper">
+          <div>
           <h2 class="example__title">Живой пример</h2>
           <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__stats">
-            <b class="example__stats-title">5 кг</b>
-            <small class="example__stats-caption">снижение веса</small>
+          <div class="example__inner">
+            <div class="example__stats">
+              <b class="example__stats-title">5 кг</b>
+              <span class="example__stats-caption"><small>снижение веса</small></span>
+            </div>
+            <div class="example__stats">
+              <b class="example__stats-title">60 дней</b>
+              <span class="example__stats-caption"><small>затрачено времени</small></span>
+            </div>
+            <p class="example__costs">Затраты на питание:<span> 15 000 руб.</span></p>
           </div>
-          <div class="example__stats">
-            <b class="example__stats-title">60 дней</b>
-            <small class="example__stats-caption">затрачено времени</small>
-          </div>
-          <p class="example__costs">Затраты на питание: 15000 руб.</p>
-          <div class="example_compare slider">
+        </div>
+          <div class="example__compare slider">
             <img class="example__img slider__item" src="img/before-mobile@1x.png" width="320" height="240" alt="Было">
-            <b class="example__img-caption example__img-caption--before">Было</b>
             <img class=" visually-hidden example__after-img slider__item" src="img/after-mobile@1x.png" width="320" height="240" alt="Стало">
-            <b class="example__img-caption example__img-caption--after">Стало</b>
-            <div class="example__controls slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">Было</button>
-              <button class="slider__toggle" type="button">Стало</button>
+
+            <div class="example__progress ">
+              <input type="radio" name="progress-btn" class="visually-hidden" id="before" checked>
+              <label for="before" class="example__caption">Было</label>
+
+              <span class="example__bar"></span>
+              <input class="example__range" type="range" min="0" max="100" step="1" value="50">
+
+              <input type="radio" name="progress-btn" class="visually-hidden" id="after">
+              <label for="after" class="example__caption">Стало</label>
             </div>
           </div>
         </div>
@@ -106,9 +115,9 @@
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-          <figure class="contacts__map">
-            <img  src="http://placehold.it/150x100" width="100%" height="100" alt="Карта">
-          </figure>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.357977755978!2d30.31726103321537!3d59.93895363269863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1522938953917"  height="359" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -120,13 +129,28 @@
           <b class="social__title visually-hidden">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com">Вконтакте</a>
+              <a class="social__link" href="https://vk.com">
+                <svg class="social__icon social__icon--vk" width="22" height="12">
+                    <use xlink:href="#icon-vk-mobile"></use>
+                </svg>
+              <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com">Фейсбук</a>
+              <a class="social__link " href="https://www.facebook.com">
+                <svg class="social__icon social__icon--facebook" width="10" height="19">
+                  <use xlink:href="#icon-fb-mobile"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--ins" href="https://www.instagram.com">Инстаграм</a>
+              <a class="social__link" href="https://www.instagram.com">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use xlink:href="#icon-insta-mobile"></use>
+                </svg>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
         </section>
