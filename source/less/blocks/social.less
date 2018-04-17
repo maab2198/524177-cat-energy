@@ -1,6 +1,4 @@
 .social {
-
-
   min-height: 62px;
 
   //background-color: @grey;
@@ -8,13 +6,13 @@
 
 .social__list {
   .list();
-  padding: 22px 0 16px;
-  display: flex;
 
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 
+  padding: 22px 0 16px;
 
   @media (min-width: @tablet-size) {
     margin-left: 25px;
@@ -23,18 +21,19 @@
 }
 
 .social__item {
-  padding: 0;
   margin: 0 17px;
+  padding: 0;
 
   @media (min-width: @tablet-size) {
     margin: 0 8px 0 9px;
   }
-
 }
+
 .social__link {
   display: block;
 
   width: 22px;
+
   text-align: center;
 
   &:hover .social__icon,
@@ -44,17 +43,16 @@
 
   &:active .social__icon {
     opacity: 0.3;
+
     fill: @green;
   }
 
   @media (min-width: @tablet-size) {
     width: 30px;
-
   }
 }
 
 .social__icon {
-
   fill: #666666;
 
   @media (min-width: @tablet-size) {
