@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
+var minifyjs = require('gulp-minify');
 
 
 gulp.task("style", function() {
@@ -29,6 +30,12 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
+});
+
+gulp.task('minify-js', function(){
+  gulp.src('source/js/**/*.js')
+    .pipe(minifyjs())
+    .pipe(gulp.dest('build/js'));
 });
 
 //Минификация изображений
@@ -68,17 +75,13 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: "build/",
-    notify: false,
-    open: false,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html",["html"]);
+  gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
+  gulp.watch("source/*.html",["html"]).on("change", server.reload);
 });
 
 gulp.task("copy", function(){
@@ -101,8 +104,11 @@ gulp.task("build", function(done) {
       "clean",
       "copy",
       "style",
+      "minify-js",
       "sprite",
       "html",
       done
     );
 });
+
+

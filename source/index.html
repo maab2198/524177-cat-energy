@@ -9,9 +9,6 @@
 </head>
 
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite.svg">"</include>
-  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__index-link">
@@ -45,7 +42,7 @@
       <div class="program-promo__wrapper">
         <h1 class="program-promo__title">Функциональное питание для котов</h1>
         <p class="program-promo__slogan">Занялся собой? Займись котом!</p>
-        <a href="form.thml" class="program-promo__btn btn">Подобрать программу</a>
+        <a href="./form.html" class="btn program-promo__btn ">Подобрать программу</a>
       </div>
     </section>
     <section class="page-main__categories categories">
@@ -55,7 +52,9 @@
           <li class="categories__item category category--slim">
             <h3 class="category__title">Похудение</h3>
             <p class="category__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="category__link">Каталог Slim<span class="category__control"></span></a>
+            <a href="#" class="category__link">Каталог Slim
+              <span class="category__control"></span>
+            </a>
           </li>
           <li class="categories__item category category--pro">
             <h3 class="category__title">Набор массы</h3>
@@ -133,10 +132,13 @@
         </div>
       </div>
     </section>
-    <section class="page-main__contacts contacts">
+    <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="contacts__title">приглашаем <p>к сотрудничеству дилеров!</p></h2>
+        <p class="contacts__text">
+          ул. Большая Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
       <div class="contacts__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.357977755978!2d30.31726103321537!3d59.93895363269863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1522938953917" height="359" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -153,26 +155,35 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com">
-              <svg class="social__icon social__icon--vk" width="22" height="12">
-                <use xlink:href="#icon-vk-mobile"></use>
+              <svg class="social__icon social__mobile" width="22" height="12">
+                <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+              </svg>
+              <svg class="social__icon " width="30" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link " href="https://www.facebook.com">
-              <svg class="social__icon social__icon--facebook" width="10" height="19">
-                <use xlink:href="#icon-fb-mobile"></use>
+            <a class="social__link" href="https://www.instagram.com">
+              <svg class="social__icon social__mobile" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
               </svg>
-              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social__icon" width="23" height="23">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com">
-              <svg class="social__icon social__icon--instagram" width="16" height="16">
-                <use xlink:href="#icon-insta-mobile"></use>
+            <a class="social__link " href="https://www.facebook.com">
+              <svg class="social__icon social__mobile" width="10" height="19">
+                <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
               </svg>
-              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social__icon" width="13.5" height="28">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
         </ul>
@@ -199,7 +210,10 @@
           </a>
       </section>
     </div>
-    <script src="js/navigation.js"></script>
+  </footer>
+  <script src="js/navigation-min.js"></script>
+  <script src="js/picturefill-min.js" defer></script>
+  <script src="js/svgxuse-min.js" defer></script>
 </body>
 
 </html>

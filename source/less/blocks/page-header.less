@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  z-index: 2;
 
   width: 100%;
 }
@@ -11,34 +12,35 @@
 
   @media (min-width: @tablet-size) {
     display: flex;
-
-    //min-height: 100px;
-  }
-
-  @media (min-width: @desktop-size) {
-    //min-height: 120px;
   }
 }
 
 .page-header__index-link {
-  //display: block;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  //width: 100%;
 
   min-height: 65px;
 
   background: @white;
 
   @media (min-width: @tablet-size) {
-    min-width: 180px;
-    min-height: 100px;
+    width: 180px;
+    height: 110px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @desktop-size) {
-    min-width: 205px;
-    min-height: 120px;
+    width: 205px;
+    height: 120px;
+    padding-top: 47px;
   }
 }
 
@@ -46,9 +48,9 @@
   margin-top: -7px;
 
   @media (min-width: @tablet-size) {
-    //display: none;
     width: 173px;
     height: 58px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-size) {

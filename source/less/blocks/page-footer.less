@@ -1,11 +1,11 @@
 .page-footer {
   width: 100%;
-  min-height: 240px;
+  //min-height: 240px;
 
   background-color: @grey;
 
   @media (min-width: @tablet-size) {
-    min-height: 150px;
+    // min-height: 150px;
   }
 }
 
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: space-between;
 
-    min-height: 150px;
+    min-height: 165px;
   }
 }
 
@@ -50,15 +50,6 @@
   }
 }
 
-.page-footer__social {
-  border-top: 1px solid @dark-grey;
-  border-bottom: 1px solid @dark-grey;
-
-  @media (min-width: @tablet-size) {
-    width: 150px;
-  }
-}
-
 .page-footer__copyright {
   padding: 22px 0;
 
@@ -66,5 +57,10 @@
     width: 164px;
     padding: 0;
     padding-top: 18px;
+  }
+
+  @media (min-width: @desktop-size) {
+    margin-top: -3px;
+    padding: 0;
   }
 }

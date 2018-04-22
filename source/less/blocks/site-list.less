@@ -1,5 +1,4 @@
 .site-list {
-  //min-height: 200px
   .list();
 
   @media (min-width: @tablet-size) {
@@ -13,6 +12,13 @@
   }
 
   @media (min-width: @desktop-size) {
+    position: absolute;
+    left: 60%;
+
+    justify-content: flex-start;
+
+    width: 40%;
+    padding-top: 73px;
     padding-top: 73px;
   }
 }
@@ -51,8 +57,6 @@
   }
 
   @media (min-width: @desktop-size) {
-    margin-right: 42px;
-
     &--white {
       color: @white;
     }
@@ -89,7 +93,7 @@
   }
 
   @media (min-width: @desktop-size) {
-    font-size: @font-size-tlist;
+    font-size: 20px;
   }
 }
 

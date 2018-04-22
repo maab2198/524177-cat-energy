@@ -9,9 +9,6 @@
 </head>
 
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite.svg">"</include>
-  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__index-link">
@@ -51,7 +48,7 @@
           <li class="product">
             <a href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-tablet@1x.webp, img/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp, img/chicken-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp, img/chicken-small-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp , img/chicken-small-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-desktop@2x.png 2x">
@@ -89,8 +86,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -133,8 +130,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -142,7 +139,6 @@
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp, img/fish-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp, img/fish-small-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/fish-small-mobile@1x.webp , img/fish-small-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2x">
                 <img class="product__img" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г" srcset="img/fish-small-mobile@2x.jpg 2x">
@@ -178,8 +174,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -222,8 +218,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -266,8 +262,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -310,8 +306,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="product">
             <a href="#">
@@ -354,8 +350,8 @@
                   </td>
                 </tr>
               </table>
-              <a href="#" class="product__btn btn">Заказать</a>
             </div>
+            <a href="#" class="product__btn btn">Заказать</a>
           </li>
           <li class="show-more">
             <button class="show-more__btn"></button>
@@ -421,6 +417,7 @@
         </ul>
         <article class="share">
           <div class="share__wrapper">
+            <img src="img/gift.svg" width="100" height="100">
             <p class="share__desc">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </article>
@@ -428,8 +425,10 @@
     </section>
     <section class="contacts contacts--grey">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <h2 class="contacts__title">приглашаем <p>к сотрудничеству дилеров!</p></h2>
+        <p class="contacts__text">
+          ул. Большая Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span>
         </p>
       </div>
       <div class="contacts__map">
@@ -446,13 +445,37 @@
         <b class="social__title visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com">Вконтакте</a>
+            <a class="social__link" href="https://vk.com">
+              <svg class="social__icon social__mobile" width="22" height="12">
+                <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+              </svg>
+              <svg class="social__icon " width="30" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com">Фейсбук</a>
+            <a class="social__link" href="https://www.instagram.com">
+              <svg class="social__icon social__mobile" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+              </svg>
+              <svg class="social__icon" width="23" height="23">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--ins" href="https://www.instagram.com">Инстаграм</a>
+            <a class="social__link " href="https://www.facebook.com">
+              <svg class="social__icon social__mobile" width="10" height="19">
+                <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+              </svg>
+              <svg class="social__icon" width="13.5" height="28">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -479,7 +502,9 @@
       </section>
     </div>
   </footer>
-  <script src="js/navigation.js"></script>
+  <script src="js/navigation-min.js"></script>
+  <script src="js/picturefill-min.js" defer></script>
+  <script src="js/svgxuse-min.js" defer></script>
 </body>
 
 </html>
