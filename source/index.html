@@ -100,15 +100,15 @@
             <p class="example__costs">Затраты на питание:<span> 15 000 руб.</span></p>
           </div>
         </div>
-        <div class="example__compare slider">
-          <div class="example__before">
+        <div class="example__compare slider js-gradient">
+          <div class="example__before ">
             <picture>
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp , img/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp , img/before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/before-mobile@1x.webp , img/before-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png , img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png , img/before-tablet@2x.png 2x">
-              <img class="example__img slider__item" src="img/before-mobile@1x.png" width="320" height="240" alt="Before" srcset="img/before-mobile@2x.png 2x">
+              <img class="example__img js-before" src="img/before-mobile@1x.png" width="320" height="240" alt="Before" srcset="img/before-mobile@2x.png 2x">
             </picture>
           </div>
           <div class="example__after">
@@ -118,14 +118,14 @@
               <source type="image/webp" srcset="img/after-mobile@1x.webp , img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png , img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png , img/after-tablet@2x.png 2x">
-              <img class="example__img slider__item" src="img/after-mobile@1x.png" width="320" height="240" alt="After" srcset="img/after-mobile@2x.png 2x">
+              <img class="example__img js-after" src="img/after-mobile@1x.png" width="320" height="240" alt="After" srcset="img/after-mobile@2x.png 2x">
             </picture>
           </div>
           <div class="example__progress ">
             <input type="radio" name="progress-btn" class="visually-hidden" id="before" checked>
             <label for="before" class="example__caption">Было</label>
             <span class="example__bar"></span>
-            <input class="example__range" type="range" min="0" max="100" step="1" value="50">
+            <input class="example__range js-range" type="range" min="0" max="100" step="1" value="46">
             <input type="radio" name="progress-btn" class="visually-hidden" id="after">
             <label for="after" class="example__caption">Стало</label>
           </div>
@@ -212,6 +212,7 @@
     </div>
   </footer>
   <script src="js/navigation-min.js"></script>
+  <script src="js/range.js"></script>
   <script src="js/picturefill-min.js" defer></script>
   <script src="js/svgxuse-min.js" defer></script>
 </body>
