@@ -330,11 +330,14 @@
 
   @media (min-width: @tablet-size) {
     display: block;
-        height: 5px;
-  -webkit-appearance: none;
 
-  &:focus{
-  outline: none;
+    height: 5px;
+
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -392,81 +395,93 @@
   }
 }
 
-
 .example__range::-webkit-slider-runnable-track {
   width: 100%;
   height: 5px;
+
   cursor: pointer;
-  animate: 0.2s;
-  background: #dcdcdc;
+
   border-radius: 25px;
+  background: #dcdcdc;
 
-
+  animate: 0.2s;
 }
 
 .example__range::-webkit-slider-thumb {
+  position: relative;
+
+  width: 35px;
+  height: 35px;
+  margin-top: -17px;
+
+  cursor: pointer;
 
   border: 1px solid @border-grey;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  margin-top: -17px;
   background: @white;
-  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
   -webkit-appearance: none;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
 }
 
 .example__range::-moz-range-thumb:after {
-    .content();
-    width:8px;
-    height:8px;
-    background-color: @green;
-    top:13px;
-    left:13px;
-    border-radius: 50%;
-  }
+  .content();
+
+  top: 13px;
+  left: 13px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background-color: @green;
+}
 
 .example__range:focus::-webkit-slider-thumb {
+  border: 2px solid @green;
   outline: 0;
-  border:2px solid @green;
 }
 
 .example__range:focus::-moz-range-thumb {
+  border: 2px solid @green;
   outline: 0;
-  border:2px solid @green;
 }
 
 .example__range:focus::-ms-thumb {
+  border: 2px solid @green;
   outline: 0;
-  border:2px solid @green;
 }
 
 .example__range::-moz-range-thumb {
-border: 1px solid @border-grey;
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  margin-top: -17px;
-  background: @white;
-  cursor: pointer;
-  -webkit-appearance: none;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   position: relative;
-}
 
+  width: 35px;
+  height: 35px;
+  margin-top: -17px;
+
+  cursor: pointer;
+
+  border: 1px solid @border-grey;
+  border-radius: 50%;
+  background: @white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+  -webkit-appearance: none;
+}
 
 .example__range::-ms-thumb {
- border: 1px solid @border-grey;
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  margin-top: -17px;
-  background: @white;
-  cursor: pointer;
-  -webkit-appearance: none;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   position: relative;
-}
 
+  width: 35px;
+  height: 35px;
+  margin-top: -17px;
+
+  cursor: pointer;
+
+  border: 1px solid @border-grey;
+  border-radius: 50%;
+  background: @white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+  -webkit-appearance: none;
+}
