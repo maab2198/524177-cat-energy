@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
 var minifyjs = require('gulp-minify');
+var deploy = require('gulp-gh-pages');
 
 
 gulp.task("style", function() {
@@ -112,3 +113,7 @@ gulp.task("build", function(done) {
 });
 
 
+gulp.task('deploy', function () {
+  return gulp.src("./build/**/*")
+    .pipe(deploy())
+});

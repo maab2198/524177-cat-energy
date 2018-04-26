@@ -1,0 +1,59 @@
+ @media (max-width: @tablet-size) {
+  .slider-holder {
+    overflow: hidden;
+
+    width: 100%;
+    height: 240px;
+  }
+
+  .image-holder {
+    position: relative;
+
+    clear: both;
+
+    width: 640px;
+    //  background-color: red;
+    height: 240px;
+
+    -webkit-transition: left 2s;
+       -moz-transition: left 2s;
+         -o-transition: left 2s;
+            transition: left 2s;
+  }
+
+  .slider-image {
+    position: relative;
+
+    display: block;
+    float: left;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  #slider-image-1:target ~ .image-holder {
+    left: 0;
+  }
+
+  #slider-image-2:target ~ .image-holder {
+    left: -320px;
+  }
+
+  .button-holder {
+    position: relative;
+    top: 63px;
+    left: 0;
+
+    clear: both;
+  }
+
+  .slider-change {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 5px;
+    background-color: brown;
+  }
+}

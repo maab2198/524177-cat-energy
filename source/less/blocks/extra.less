@@ -1,26 +1,21 @@
 .extra {
-  background-color: @white;
   position: relative;
 
-
+  background-color: @white;
 
   @media (min-width: @tablet-size) {
     &::before {
       top: 49px;
       left: 0;
-width: 100%;
 
+      width: 100%;
     }
   }
 
   @media (min-width: @desktop-size) {
-
     &::before {
       top: 56px;
-
-
     }
-
   }
 }
 
@@ -29,15 +24,13 @@ width: 100%;
 
   position: relative;
 
-
-
   &::before {
     .content();
 
     z-index: 0;
     top: 40px;
+    right: -20px;
     left: 20px;
-    right:-20px;
 
     width: calc(~"100% - 20px");
     height: 3px;
@@ -49,9 +42,7 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
 
-
     padding-bottom: 88px;
-
   }
 }
 
