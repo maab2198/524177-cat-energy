@@ -3,6 +3,7 @@
   "version": "13.0.0",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "homepage": "https://maab2198.github.io/524177-cat-energy/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "7.2.x",
