@@ -3,6 +3,7 @@ var beforeImg = document.querySelector(".js-before");
 var afterImg = document.querySelector(".js-after");
 var sliderGradient = document.querySelector(".js-gradient");
 
+
 rangeInput.oninput = function() {
 
   var value = (rangeInput.value - 50);
@@ -30,3 +31,17 @@ function resize() {
 
   }
 }
+
+
+function oldBrowser() {
+  if ((/MSIE 10/i.test(navigator.userAgent)) || (/MSIE 9/i.test(navigator.userAgent)) ||
+    (/rv:11.0/i.test(navigator.userAgent)) || (/Edge\/\d./i.test(navigator.userAgent))) {
+    afterImg.style.clip = "rect(auto, auto, auto, 345px)";
+    beforeImg.style.clip = "rect(auto, 345px,auto, auto)";
+  }
+
+
+}
+
+
+oldBrowser();
