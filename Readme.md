@@ -1,60 +1,30 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Cat Energy
 
-* Студент: [Мария Абрамова](https://up.htmlacademy.ru/adaptive/13/user/524177).
-* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
+[Link](https://maab2198.github.io/cat-energy/)
 
----
+Training project for [HtmlAcademy](https://htmlacademy.ru) (HTML&CSS level 2)
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+## Install
+    $ git@github.com:maab2198/cat-energy.git
+    $ cd cat-energy
+    $ npm install
 
-Полезный файл:
+## Start & watch
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+    $ npm start
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+## Languages & tools
 
----
+- HTML5, JS
+- [Less](http://lesscss.org/)
+- SVG
+- [Gulp](https://gulpjs.com/)
+    -- csso
+    -- autoprefixer
+    -- browser-sync
+    -- webp
 
-### Памятка
+- [Npm](https://www.npmjs.com/)
+- Browsers: Chrome, Firefox, Opera, Safari, Edge и IE11
+- Adaptive layout
 
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914832-c35d40a4-f92b-11e7-9614-ab300cc5cb31.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914831-c33ad1cc-f92b-11e7-98e0-d3500db6a058.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914833-c3757cf0-f92b-11e7-9512-365f3e2a339f.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/524177-cat-energy.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/524177-cat-energy
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/524177-cat-energy/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/524177-cat-energy?type=dev
