@@ -774,7 +774,6 @@ template {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #68b738;
 }
 @media (min-width: 768px) {
   .page-main__wrapper {
@@ -788,17 +787,13 @@ template {
     padding: 0 40px;
   }
 }
-@media (min-width: 768px) {
-  .page-main__wrapper {
-    background-color: #ffffff;
-  }
-}
 .program-promo__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
   min-height: 502px;
+  background-color: #68b738;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 168px, center 0;
@@ -3220,7 +3215,7 @@ template {
   line-height: 16px;
   line-height: 20px;
   display: inline-block;
-  width: 136px;
+  width: 135px;
   color: #111111;
 }
 @media (min-width: 768px) {
