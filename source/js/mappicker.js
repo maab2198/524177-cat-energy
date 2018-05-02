@@ -13,6 +13,7 @@ function initMap() {
     icon: 'img/map-pin-small.png',
     map: map
   });
+  changeIcon();
 
 }
 
