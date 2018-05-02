@@ -1,4 +1,4 @@
-window.addEventListener("resize", initMap, false);
+window.addEventListener("resize", changeIcon, false);
 var map;
 
 function initMap() {
@@ -14,10 +14,14 @@ function initMap() {
     map: map
   });
 
-  if (window.innerWidth >= 768) {
+}
+
+function changeIcon() {
+    if (window.innerWidth >= 768) {
     marker.icon = 'img/map-pin.png';
     if (window.innerWidth >= 1300) {
       map.center = new google.maps.LatLng(59.939014, 30.319356);
     }
   }
+
 }
