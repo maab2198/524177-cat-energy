@@ -793,9 +793,9 @@ template {
   padding: 0 20px;
   position: relative;
   min-height: 502px;
-  background: #68b738 url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 168px, center 0;
+  background: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #68b738, #68b738 272px, transparent 272px, transparent);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center 168px, center 0, center 0;
 }
 @media (min-width: 768px) {
   .program-promo__wrapper {
@@ -1876,12 +1876,12 @@ template {
 }
 .example__range::-ms-track {
   width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
   height: 5px;
+  cursor: pointer;
+  color: transparent;
+  border-color: transparent;
   border-radius: 25px;
+  background: transparent;
   background: #dcdcdc;
 }
 .example__range::-ms-fill-lower {
@@ -2440,7 +2440,7 @@ template {
 }
 @media (min-width: 1300px) {
   .extra-product__price {
-    width: 45px;
+    width: 50px;
     text-align: left;
   }
 }
@@ -3159,9 +3159,9 @@ template {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #ffffff;
   padding-top: 28px;
   padding-bottom: 25px;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .contacts__wrapper {
@@ -3186,8 +3186,8 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    min-height: 195px;
     height: 2px;
+    min-height: 195px;
     padding: 0 70px;
   }
 }
@@ -3293,8 +3293,8 @@ template {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding: 0;
   min-height: 360px;
+  padding: 0;
   background-color: #f2f2f2;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -3351,10 +3351,10 @@ template {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #f2f2f2;
   min-height: 240px;
   padding-top: 10px;
   padding-bottom: 22px;
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -3379,8 +3379,8 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    min-height: 165px;
     height: 50px;
+    min-height: 165px;
   }
 }
 .page-footer__index-link {
@@ -3550,6 +3550,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+td {
+  display: block;
 }
 .visually-hidden {
   position: absolute;
