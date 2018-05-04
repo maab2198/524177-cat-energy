@@ -25,24 +25,20 @@ var myLatlng = {
 var map;
 var marker;
 
-function initMap() {};
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: myLatlng.center,
+    mapTypeId: 'roadmap'
+  });
 
-(function() {
-  initMap = function() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 17,
-      center: myLatlng.center,
-      mapTypeId: 'roadmap'
-    });
-
-    marker = new google.maps.Marker({
-      position: myLatlng.center,
-      icon: 'img/map-pin-small.png',
-      map: map
-    });
-    isMobileDevice();
-  }
-});
+  marker = new google.maps.Marker({
+    position: myLatlng.center,
+    icon: 'img/map-pin-small.png',
+    map: map
+  });
+  isMobileDevice();
+}
 
 function mapResize() {
   if (window.innerWidth >= 1300) {
@@ -53,3 +49,5 @@ function mapResize() {
   }
   marker.icon = 'img/map-pin.png';
 }
+
+
