@@ -5,11 +5,11 @@
 
   min-height: 502px; //!
 
-  background:@green url("../img/index-can-mobile@1x.png"),
-  url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 168px, center 0;
-
+  background: url("../img/index-can-mobile@1x.png"),
+  url("../img/index-background-mobile@1x.jpg"),
+  linear-gradient(to bottom, @green, @green 272px, transparent 272px, transparent);
+  background-repeat: no-repeat, no-repeat,no-repeat;
+  background-position: center 168px, center 0, center 0;
 
   @media @retina {
     background-image: url("../img/index-can-mobile@1x.png"),
