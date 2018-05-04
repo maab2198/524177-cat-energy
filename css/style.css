@@ -811,7 +811,7 @@ template {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .program-promo__wrapper {
-    background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #68b738, #68b738 272px, transparent 272px, transparent);
     background-size: 280px 272px, 320px 305px;
   }
 }

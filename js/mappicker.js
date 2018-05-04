@@ -3,7 +3,8 @@
 //при медленом интернете на телефоне все время будет рендериться карта заново при каждом касании экрана
 // -> resize работает только если не телефон
 // маленькая иконка только на телефоне
-
+// иногда ошибка Uncaught Jb {message: "initMap is not a function", name: "InvalidValueError", stack: "Error↵    at new Jb (https://maps.googleapis.com/m…48pnHzd547KztMkZGV4ftU30s&callback=initMap:157:51"}
+// если с гитхаба и открыть devTools - > телефон
 window.addEventListener("resize", isMobileDevice, false);
 
 function isMobileDevice() {
@@ -11,7 +12,6 @@ function isMobileDevice() {
     (typeof window.orientation !== "undefined") ||
     (navigator.userAgent.indexOf('IEMobile') !== -1)
   ) {
-    console.log("phone");
     return;
   }
   mapResize();
