@@ -25,6 +25,6 @@ Training project for [HtmlAcademy](https://htmlacademy.ru) (HTML&CSS level 2)
     -- webp
 
 - [Npm](https://www.npmjs.com/)
-- Browsers: Chrome, Firefox, Opera, Safari, Edge и IE11
+- Browsers: Chrome, Firefox, Opera, Edge и IE11
 - Adaptive layout
 
