@@ -3,8 +3,8 @@
 //при медленом интернете на телефоне все время будет рендериться карта заново при каждом касании экрана
 // -> resize работает только если не телефон
 // маленькая иконка только на телефоне
-// иногда ошибка Uncaught Jb {message: "initMap is not a function", name: "InvalidValueError", stack: "Error↵    at new Jb (https://maps.googleapis.com/m…48pnHzd547KztMkZGV4ftU30s&callback=initMap:157:51"}
-// если с гитхаба и открыть devTools - > телефон
+// ошибка Uncaught Jb {message: "initMap is not a function", name: "InvalidValueError", stack: "Error↵    at new Jb (https://maps.googleapis.com/m…48pnHzd547KztMkZGV4ftU30s&callback=initMap:157:51"}
+
 window.addEventListener("resize", isMobileDevice, false);
 
 function isMobileDevice() {
@@ -24,25 +24,21 @@ var myLatlng = {
 
 var map;
 var marker;
+initMap();
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: myLatlng.center,
+    mapTypeId: 'roadmap'
+  });
 
-function initMap() {};
-
-(function() {
-  initMap = function() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 17,
-      center: myLatlng.center,
-      mapTypeId: 'roadmap'
-    });
-
-    marker = new google.maps.Marker({
-      position: myLatlng.center,
-      icon: 'img/map-pin-small.png',
-      map: map
-    });
-    isMobileDevice();
-  }
-});
+  marker = new google.maps.Marker({
+    position: myLatlng.center,
+    icon: 'img/map-pin-small.png',
+    map: map
+  });
+  isMobileDevice();
+}
 
 function mapResize() {
   if (window.innerWidth >= 1300) {
@@ -53,3 +49,5 @@ function mapResize() {
   }
   marker.icon = 'img/map-pin.png';
 }
+
+
