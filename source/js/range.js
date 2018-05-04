@@ -1,8 +1,12 @@
+// в IE EDGE слайдер не работает из-за clip-path
+// Почему не работает градиент в IE11 ????
+
 var rangeInput = document.querySelector(".js-range");
 var beforeImg = document.querySelector(".js-before");
 var afterImg = document.querySelector(".js-after");
 var sliderGradient = document.querySelector(".js-gradient");
 
+window.addEventListener("resize", rangeResize, false);
 
 rangeInput.oninput = function() {
 
@@ -16,9 +20,8 @@ rangeInput.oninput = function() {
 
 }
 
-window.addEventListener("resize", resize, false);
 
-function resize() {
+function rangeResize() {
   if (window.innerWidth < 768) {
     beforeImg.style.clipPath = "inset(0 0 0 0)";
 
@@ -32,16 +35,17 @@ function resize() {
   }
 }
 
-
 function oldBrowser() {
-  if ((/MSIE 10/i.test(navigator.userAgent)) || (/MSIE 9/i.test(navigator.userAgent)) ||
-    (/rv:11.0/i.test(navigator.userAgent)) || (/Edge\/\d./i.test(navigator.userAgent))) {
+
+  var isIE = /*@cc_on!@*/ false || !!document.documentMode, // Internet Explorer 6-11
+    isEdge = !isIE && !!window.StyleMedia; // Edge 20+
+
+  if (isIE || isEdge || (/Edge\/\d./i.test(navigator.userAgent))) {
+    rangeInput.style.height= '40px';
     afterImg.style.clip = "rect(auto, auto, auto, 345px)";
     beforeImg.style.clip = "rect(auto, 345px,auto, auto)";
   }
 
-
 }
-
 
 oldBrowser();

@@ -1,14 +1,20 @@
+// isMobileDevice()
+//https://coderwall.com/p/i817wa/one-line-function-to-detect-mobile-devices-with-javascript
+//при медленом интернете на телефоне все время будет рендериться карта заново при каждом касании экрана
+// -> resize работает только если не телефон
+// маленькая иконка только на телефоне
+
 window.addEventListener("resize", isMobileDevice, false);
 
 function isMobileDevice() {
   if (
     (typeof window.orientation !== "undefined") ||
     (navigator.userAgent.indexOf('IEMobile') !== -1)
-    )
-    { console.log("phone");
-      return;
-    }
-  resize();
+  ) {
+    console.log("phone");
+    return;
+  }
+  mapResize();
 };
 
 var myLatlng = {
@@ -34,19 +40,14 @@ function initMap() {
   isMobileDevice();
 }
 
-function resize() {
-    if (window.innerWidth >= 1300) {
-      map.panTo(myLatlng.right);
+function mapResize() {
+  if (window.innerWidth >= 1300) {
+    map.panTo(myLatlng.right);
 
-  }
-  else {
+  } else {
     map.panTo(myLatlng.center);
   }
-      marker.icon = 'img/map-pin.png';
+  marker.icon = 'img/map-pin.png';
 }
 
-// isMobileDevice()
-//https://coderwall.com/p/i817wa/one-line-function-to-detect-mobile-devices-with-javascript
-//при медленом интернете на телефоне все время будет рендериться карта заново при каждом касании экрана
-// -> resize работает только если не телефон
-// маленькая иконка только на телефоне
+
